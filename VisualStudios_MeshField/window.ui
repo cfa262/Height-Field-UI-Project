@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Window</class>
+ <widget class="QWidget" name="Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1028</width>
+    <height>733</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1028</width>
+    <height>733</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Window</string>
+  </property>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>13</y>
+     <width>501</width>
+     <height>481</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>510</y>
+     <width>1001</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QSlider" name="translateSlider">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>140</y>
+      <width>331</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="wireFrameCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>WireFrame</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="rowSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="widthSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="columnSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>110</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="depthSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>170</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSlider" name="red_slider">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>50</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="green_slider">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>110</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="blue_slider">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>180</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>20</y>
+      <width>68</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Red</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>80</y>
+      <width>68</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Green</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>150</y>
+      <width>68</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Blue</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="topViewButton">
+    <property name="geometry">
+     <rect>
+      <x>861</x>
+      <y>10</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Top View</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sideViewButton">
+    <property name="geometry">
+     <rect>
+      <x>861</x>
+      <y>63</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Side View</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Mesh</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>68</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rows</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>90</y>
+      <width>68</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Columns</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="widthLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>68</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Width</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="depthLabel">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>150</y>
+      <width>68</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Depth</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fractalizeButton">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>10</y>
+      <width>112</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="text">
+     <string>Fractalize</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="smoothButton">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>63</y>
+      <width>112</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Smooth</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="fractalSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>14</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="smoothSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>60</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>110</y>
+      <width>141</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vertex Translation</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="snowSlider">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>40</y>
+      <width>22</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="redLabel">
+    <property name="geometry">
+     <rect>
+      <x>427</x>
+      <y>20</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="greenLabel">
+    <property name="geometry">
+     <rect>
+      <x>427</x>
+      <y>80</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="blueLabel">
+    <property name="geometry">
+     <rect>
+      <x>427</x>
+      <y>150</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>255</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>131</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Snow Cap Height</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="snowLabel">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>70</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="vertexLabel">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>110</y>
+      <width>68</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="randomFieldButton">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>170</y>
+      <width>221</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Randomize Height Field</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="MyGLWidget" name="myGLWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>10</y>
+     <width>480</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>480</width>
+     <height>480</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MyGLWidget</class>
+   <extends>QWidget</extends>
+   <header>myglwidget.h</header>
+   <container>1</container>
+   <slots>
+    <slot>setXRotation(int)</slot>
+    <slot>setZRotation(int)</slot>
+    <slot>setYRotation(int)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
